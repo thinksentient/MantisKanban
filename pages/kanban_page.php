@@ -122,7 +122,7 @@ foreach($columns as $title => $column){
 	//$rows = filter_get_bug_rows( $f_page_number, $t_per_page, $t_page_count, $t_bug_count, $c_filter[$t_box_title] );
 	
 	$rows = filter_get_bug_rows( $f_page_number, $t_per_page, $t_page_count, $t_bug_count, array(
-		FILTER_PROPERTY_STATUS => $column['status'],
+		FILTER_PROPERTY_STATUS_ID => $column['status'],
 		'_view_type' => 'advanced'
 	));
 	
